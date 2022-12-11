@@ -6,10 +6,6 @@ A simple widget  that can be used for pinned silver app bar
 - Can target a particular widget in a List
 - Have Default Animation
 
-## Getting started
-
-flutter pub add sliver_app_bar_title:any version
-
 ## Usage
 
 ```dart

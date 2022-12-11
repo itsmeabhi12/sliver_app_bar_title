@@ -2,6 +2,6 @@
 
 * Initial release.
 
-## 1.0.1+1
+## 1.0.1+2
 
 * Readme updated

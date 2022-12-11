@@ -1,6 +1,6 @@
 name: sliver_app_bar_title
 description: a widget for  pinned SliverAppBar
-version: 1.0.1+1
+version: 1.0.1
 repository: https://github.com/itsmeabhi12/sliver_app_bar_title
 
 environment:

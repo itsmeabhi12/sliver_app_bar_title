@@ -6,7 +6,7 @@ A simple widget  that can be used for pinned silver app bar
 - Can target a particular widget in a List
 - Animation
 
-![DEMO](demo.gif) 
+![DEMO](https://raw.githubusercontent.com/itsmeabhi12/sliver_app_bar_title/main/demo.gif) 
 
 ## Usage
 

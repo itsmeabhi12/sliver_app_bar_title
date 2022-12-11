@@ -4,7 +4,7 @@ A simple widget  that can be used for pinned silver app bar
 ## Features
 
 - Can target a particular widget in a List
-- Have Default Animation
+- Animation
 
 ![DEMO](demo.gif) 
 

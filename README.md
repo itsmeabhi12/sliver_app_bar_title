@@ -7,7 +7,7 @@ sliver app bar title is a  widget  that can be used for pinned silver app bar
 - Animation
 
 
-<img src="https://raw.githubusercontent.com/itsmeabhi12/sliver_app_bar_title/main/demo.gif" width="200" height="300"/>
+<img src="https://raw.githubusercontent.com/itsmeabhi12/sliver_app_bar_title/main/demo.gif" width="400" height="700"/>
 
 ## Usage
 

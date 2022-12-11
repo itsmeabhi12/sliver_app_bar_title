@@ -1,12 +1,13 @@
 
-A simple widget  that can be used for pinned silver app bar
+sliver app bar title is a  widget  that can be used for pinned silver app bar
 
 ## Features
 
 - Can target a particular widget in a List
 - Animation
 
-![DEMO](https://raw.githubusercontent.com/itsmeabhi12/sliver_app_bar_title/main/demo.gif) 
+
+<img src="https://raw.githubusercontent.com/itsmeabhi12/sliver_app_bar_title/main/demo.gif" width="200" height="300"/>
 
 ## Usage
 

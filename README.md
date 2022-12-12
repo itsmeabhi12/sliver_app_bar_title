@@ -1,15 +1,20 @@
 
-sliver app bar title is a  widget  that can be used for pinned silver app bar
-
+SliverAppBarTitle is a  widget  that can be used to show a title on pinned SliverAppBar based on scrolling  and particular widget
 ## Features
 
 - Can target a particular widget in a List
 - Animation
+- Automatically show / hides title on SliverAppBar
 
+## Demo
 
-<img src="https://raw.githubusercontent.com/itsmeabhi12/sliver_app_bar_title/main/demo.gif" width="350" height="600"/>
+<img src="https://raw.githubusercontent.com/itsmeabhi12/sliver_app_bar_title/main/demo.gif" />
 
 ## Usage
+
+First create a GlobalKey and then assign that key to target widget
+now the sliver app bar title will be  visible once the targeted
+widget go behinds the sliver app bar
 
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
@@ -50,9 +55,10 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 ```
 
+
 ## Info
 
-Feel Free to request any missing features or report issues [here](https://github.com/itsmeabhi12/sliver_app_bar_title/issues).
+Feel free to request any missing features or report issues  [here](https://github.com/itsmeabhi12/sliver_app_bar_title/issues).
 
 
 

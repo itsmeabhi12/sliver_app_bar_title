@@ -46,7 +46,6 @@ class _SliverAppBarTitleState extends State<SliverAppBarTitle>
   void dispose() {
     _controller.dispose();
     _removeListener();
-    _scrollPosition?.dispose();
     super.dispose();
   }
 
@@ -64,17 +63,28 @@ class _SliverAppBarTitleState extends State<SliverAppBarTitle>
     final sliverAppBar = context.findAncestorWidgetOfExactType<SliverAppBar>();
 
     if (_scrollPosition != null && sliverAppBar != null) {
+      final double bottomHeight =
+          sliverAppBar.bottom?.preferredSize.height ?? 0.0;
+      final double topPadding =
+          sliverAppBar.primary ? MediaQuery.of(context).padding.top : 0.0;
+      final double collapsedHeight = (sliverAppBar.pinned &&
+              sliverAppBar.floating &&
+              sliverAppBar.bottom != null)
+          ? (sliverAppBar.collapsedHeight ?? 0.0) + bottomHeight + topPadding
+          : (sliverAppBar.collapsedHeight ?? sliverAppBar.toolbarHeight) +
+              bottomHeight +
+              topPadding;
       final bottomPoint = widget.targetWidgetKey.globalPaintBounds?.bottom;
 
       if (!_controller.isAnimating) {
-        if (bottomPoint != null && bottomPoint < 0) {
+        if (bottomPoint != null && (bottomPoint - collapsedHeight) < 0) {
           _controller.forward();
           return;
         }
       }
 
       if (_controller.isCompleted) {
-        if (bottomPoint != null && bottomPoint > 0) {
+        if (bottomPoint != null && (bottomPoint - collapsedHeight) > 0) {
           _controller.reverse();
           return;
         }

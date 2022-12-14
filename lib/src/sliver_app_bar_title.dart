@@ -46,6 +46,7 @@ class _SliverAppBarTitleState extends State<SliverAppBarTitle>
   void dispose() {
     _controller.dispose();
     _removeListener();
+    _scrollPosition?.dispose();
     super.dispose();
   }
 
@@ -56,7 +57,6 @@ class _SliverAppBarTitleState extends State<SliverAppBarTitle>
 
   _removeListener() {
     _scrollPosition?.removeListener(_listener);
-    _scrollPosition?.dispose();
   }
 
   _listener() {

@@ -1,6 +1,6 @@
 name: sliver_app_bar_title
 description: SliverAppBarTitle is a widget that can be used to show a title on pinned SliverAppBar based on scrolling and particular widget
-version: 1.0.1+5
+version: 1.0.1+6
 repository: https://github.com/itsmeabhi12/sliver_app_bar_title
 
 environment:

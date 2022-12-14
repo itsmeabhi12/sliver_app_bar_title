@@ -8,4 +8,9 @@
 
 ## 1.0.1+4
 
-* Readme updated
+* Minor Fixes
+
+## 1.0.1+4
+
+* fixed : A ScrollPositionWithSingleContext was used after being disposed
+

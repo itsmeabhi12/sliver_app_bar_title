@@ -46,18 +46,23 @@ class _SliverAppBarTitleState extends State<SliverAppBarTitle>
   void dispose() {
     _controller.dispose();
     _removeListener();
-    _scrollPosition?.dispose();
     super.dispose();
   }
 
   _addListener() {
-    final scrollable = Scrollable.of(context);
-    _scrollPosition = scrollable?.position;
+    _scrollPosition = Scrollable.of(context)?.position;
     _scrollPosition?.addListener(_listener);
   }
 
   _removeListener() {
     _scrollPosition?.removeListener(_listener);
+  }
+
+  @override
+  void didChangeDependencies() {
+    _removeListener();
+    _addListener();
+    super.didChangeDependencies();
   }
 
   _listener() {
@@ -91,13 +96,6 @@ class _SliverAppBarTitleState extends State<SliverAppBarTitle>
         }
       }
     }
-  }
-
-  @override
-  void didChangeDependencies() {
-    _removeListener();
-    _addListener();
-    super.didChangeDependencies();
   }
 
   @override

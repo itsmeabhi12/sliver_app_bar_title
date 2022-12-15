@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 100.0,
                 child: Center(
                   child: Text('$index',
-                      key: index == 1 ? globalKey : null, textScaleFactor: 5),
+                      key: index == 2 ? globalKey : null, textScaleFactor: 5),
                 ),
               );
             },

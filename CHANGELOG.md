@@ -14,3 +14,7 @@
 
 * fixed : A ScrollPositionWithSingleContext was used after being disposed
 
+## 1.0.1+7
+
+* fixed : example updated
+
